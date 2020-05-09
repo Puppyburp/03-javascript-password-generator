@@ -5,13 +5,13 @@ var generateBtn = document.querySelector("#generate");
 function generatePassword(){
   var thePassword = '';
   // ask user to enter # of characters
-  var userValue = prompt("How many characters would you like the password to contain? *Number must be between 8 and 128 characters*");
+  var userValue = prompt("How many characters would you like the password to contain? * Number must be between 8 and 128 characters *");
   
   // loop to generate appropriate character count
   while(true){
     if (userValue < 8 || userValue > 128) {
       alert("You must choose a number between 8 and 128");
-      userValue = prompt("How many characters would you like the password to contain? *Number must be between 8 and 128 characters*");
+      userValue = prompt("How many characters would you like the password to contain? * Number must be between 8 and 128 characters *");
     } else {
       break;
     }
@@ -23,7 +23,7 @@ function generatePassword(){
    var confirmUp = confirm("Click OK to include uppercase characters");
    var confirmLow = confirm("Click OK to include lowercase characters");
   
-   //
+   // functions array
    var functionsArray =[]
    if(confirmNum) {
      functionsArray.push(generateRandomNumber)
@@ -37,14 +37,14 @@ function generatePassword(){
    if(confirmLow) {
      functionsArray.push(generateRandomLowerCase)
    }
-
   // loop for generating random characters
    for(var i = 0; i < userValue; i++) {
      // Here goes the logic for creating one random char. Will be repeated userValue times
-     // choose a random index from the functionsArray and invoke it. Store what's returned in a new var and append it to "thePassword"
-     var newChar = functionsArray[0]()
+     // randomize the functionsArray, invoke it and store what's returned in a new var then append it to "thePassword"
 
-     thePassword = thePassword + newChar
+     var newChar = functionsArray[Math.floor(Math.random()*functionsArray.length)]()
+     thePassword = thePassword + newChar 
+
    }
     function generateRandomNumber() {
       var numbers = "0123456789";
@@ -69,7 +69,6 @@ function generatePassword(){
       var randomSpecChar = specialChar[Math.floor(Math.random()*specialChar.length)]
       return randomSpecChar
     }
-
 
     return thePassword;
 
