@@ -16,6 +16,6 @@ GitHub link to generator page: (https://puppyburp.github.io/03-javascript-passwo
 
 The following image demonstrates the application functionality:
 
-![password generator](/assets/03-javascript-password-generator.png)
+![password generator](./assets/images/03-javascript-password-generator.png)
 
 
