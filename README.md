@@ -4,7 +4,7 @@ This application generates a random password based on user-selected criteria.
 
 ------------------------------------
 
-Users will select a password length between 8 and 128 then the following criteria:
+Users will select a password length between 8 and 128, then the following criteria:
 * Numbers
 * Uppercase letters
 * Lowercase letters
