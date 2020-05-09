@@ -2,7 +2,7 @@
 
 This application generates a random password based on user-selected criteria. 
 
-Users will pick select a password length between 8 and 128 then the following criteria:
+Users will select a password length between 8 and 128 then the following criteria:
 * Numbers
 * Uppercase letters
 * Lowercase letters
@@ -16,6 +16,6 @@ GitHub link to generator page: (https://puppyburp.github.io/03-javascript-passwo
 
 The following image demonstrates the application functionality:
 
-![password generator](./Assets/03-javascript-password-generator.png)
+![password generator](/assets/03-javascript-password-generator.png)
 
 
