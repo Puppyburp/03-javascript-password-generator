@@ -11,7 +11,6 @@ Users will pick select a password length between 8 and 128 then the following cr
 Then, based upon the criteria selected a random password will be rendered in the window.
 
 
-https://puppyburp.github.io/03-javascript-password-generator/ - automatic!
 GitHub link to generator page: (https://puppyburp.github.io/03-javascript-password-generator/)
 
 
